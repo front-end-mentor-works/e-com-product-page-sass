@@ -135,7 +135,7 @@ header.main-header {
 .product-thumbnail-active {
   filter: opacity(0.3);
   font-size: 0;
-  border: 2.5px solid hsl(26deg, 100%, 55%);
+  border: 2px solid hsl(26deg, 100%, 55%);
   border-radius: 8px;
   background: hsl(26deg, 100%, 55%) !important;
 }
