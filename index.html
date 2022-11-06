@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | E-commerce product page</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <!-- <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body>
+    <header class="main-header">
+      <a class="category-name">
+        <span> Sneakers </span>
+      </a>
+      <nav class="main-nav">
+        <ul class="main-nav-list">
+          <li><a class="main-nav-link" href="#how">Collections</a></li>
+          <li><a class="main-nav-link" href="#meals">Men</a></li>
+          <li>
+            <a class="main-nav-link" href="#testimonials">Women</a>
+          </li>
+          <li><a class="main-nav-link" href="#pricing">About</a></li>
+          <li><a class="main-nav-link nav-cta" href="#cta">Contact</a></li>
+        </ul>
+      </nav>
+      <ul class="my__ac-list">
+        <li>
+          <a href="#" class="cart-icon"
+            ><img src="./images/icon-cart.svg" alt="cart icon" srcset=""
+          /></a>
+        </li>
+        <li>
+          <a href="#">
+            <img
+              class="profile-thumbnail"
+              src="./images/image-avatar.png"
+              alt="image-avatar"
+              srcset=""
+            />
+          </a>
+        </li>
+      </ul>
+    </header>
+    <hr class="hr-line" />
+    <main>
+      <div class="container grid grid--2-cols u-pb-2">
+        <div class="product-photos">
+          <div class="pdt-img-box">
+            <img
+              class="pdt-img"
+              src="./images/image-product-1.jpg"
+              alt="product-large-image"
+            />
+          </div>
+          <div class="product-thumbnail-box">
+            <img
+              class="product-thumbnail product-thumbnail-active"
+              src="./images/image-product-1-thumbnail.jpg"
+              alt="product-1-image"
+            />
+            <img
+              class="product-thumbnail"
+              src="./images/image-product-2-thumbnail.jpg"
+              alt="product-2-image"
+            />
+            <img
+              class="product-thumbnail product-thumbnail-active"
+              src="./images/image-product-3-thumbnail.jpg"
+              alt="product-3-image"
+            />
+            <img
+              class="product-thumbnail"
+              src="./images/image-product-4-thumbnail.jpg"
+              alt="product-4-image"
+            />
+          </div>
+        </div>
+        <div class="product-details">
+          <h3 class="product-brand">SNEAKER COMPANY</h3>
+          <h2 class="product-title">Fall Limited Edition Sneakers</h2>
+          <p class="product-description">
+            These low-profile sneakers are your perfect casual wear companion.
+            Featuring a durable rubber outer sole, they’ll withstand everything
+            the weather can offer.
+          </p>
+          <div class="product-price-box">
+            <span class="product-price"> <strong>$125.00</strong> </span>
+            <span class="product-discount">50%</span>
+          </div>
+
+          <p class="product-mrp"><strong>$250.00</strong></p>
+          <div class="add-card-box">
+            <span class="change-qty-box">
+              <span class="subtract-qty-btn"
+                ><img src="./images/icon-minus.svg" alt=""
+              /></span>
+              <span class="qty"><strong>0</strong></span>
+              <span class="add-qty-btn">
+                <img src="./images/icon-plus.svg" alt="" />
+              </span>
+            </span>
+            <button class="btn btn-add-cart">
+              <span>
+                <img
+                  class="cart-icon"
+                  src="./images/icon-cart.svg"
+                  alt=""
+                /> </span
+              ><span> Add to cart </span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div> -->
+  </body>
+</html>
