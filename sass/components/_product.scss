@@ -16,21 +16,12 @@
   width: 20.6%;
   border: none;
   border-radius: 0.8rem;
-  -webkit-border-radius: 0.8rem;
-  -moz-border-radius: 0.8rem;
-  -ms-border-radius: 0.8rem;
-  -o-border-radius: 0.8rem;
   &-active {
-    display: block;
+    filter: opacity(0.3);
+    font-size: 0;
+    border: 2.5px solid $Orange;
     border-radius: 8px;
-    border: 2px solid $Orange;
-    background: $Orange;
-    //filter: opacity(0.3);
-    //-webkit-filter: opacity(0.3);
-    -webkit-border-radius: 8px;
-    -moz-border-radius: 8px;
-    -ms-border-radius: 8px;
-    -o-border-radius: 8px;
+    background: $Orange !important;
   }
 }
 .product {

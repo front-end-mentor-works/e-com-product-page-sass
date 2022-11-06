@@ -131,20 +131,13 @@ header.main-header {
   width: 20.6%;
   border: none;
   border-radius: 0.8rem;
-  -webkit-border-radius: 0.8rem;
-  -moz-border-radius: 0.8rem;
-  -ms-border-radius: 0.8rem;
-  -o-border-radius: 0.8rem;
 }
 .product-thumbnail-active {
-  display: block;
+  filter: opacity(0.3);
+  font-size: 0;
+  border: 2.5px solid hsl(26deg, 100%, 55%);
   border-radius: 8px;
-  border: 2px solid hsl(26deg, 100%, 55%);
-  background: hsl(26deg, 100%, 55%);
-  -webkit-border-radius: 8px;
-  -moz-border-radius: 8px;
-  -ms-border-radius: 8px;
-  -o-border-radius: 8px;
+  background: hsl(26deg, 100%, 55%) !important;
 }
 
 .product-details {
