@@ -34,13 +34,31 @@ header.main-header {
 
 .main-nav-link:hover,
 .main-nav-link:active {
-  color: #cf711f;
+  color: $Orange;
 }
 .my__ac-list {
   display: flex;
   align-items: center;
   gap: 3.2rem;
   justify-self: flex-end;
+  .nav--cart_icon {
+    position: relative;
+  }
+  .cart--strip {
+    position: absolute;
+    background-color: $Orange;
+    width: 2.2rem;
+    height: 1.5rem;
+    border-radius: 1rem;
+    top: -0.8rem;
+    right: -0.8rem;
+    color: $White;
+    text-align: center;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 }
 .profile-thumbnail {
   height: 48px;

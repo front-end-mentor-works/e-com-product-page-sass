@@ -1,0 +1,62 @@
+#lboverlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  background: #999;
+  width: 100%;
+  height: 100%;
+  opacity: 0.8;
+  z-index: 100;
+}
+
+#lbpopup {
+  display: none;
+  position: absolute;
+  top: 34%;
+  left: 45%;
+  width: 31%;
+  margin-left: -250px;
+  /*Halfthevalueofwidthtocenterdiv*/
+  margin-top: -250px;
+  /*Halfthevalueofheighttocenterdiv*/
+  z-index: 200;
+  border-radius: 2rem;
+}
+.lbcontrols {
+  position: absolute;
+  right: 0;
+  top: -10%;
+}
+
+#lbclose {
+  float: right;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.lbcontent {
+  img {
+    width: 100%;
+    border-radius: 2rem;
+  }
+  .product-thumbnail {
+    &-box {
+      width: 22%;
+      margin: 3rem 4rem 0;
+      gap: 22%;
+    }
+    width: 80%;
+    border-radius: 8px;
+    &-active {
+      z-index: -1;
+      filter: opacity(1);
+      -webkit-filter: opacity(1);
+      opacity: 0.2;
+    }
+  }
+}
+
+#button {
+  cursor: pointer;
+}

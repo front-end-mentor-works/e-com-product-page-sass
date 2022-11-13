@@ -44,10 +44,11 @@
         </ul>
       </nav>
       <ul class="my__ac-list">
-        <li>
+        <li class="nav--cart_icon" id="cartBtn">
           <a href="#" class="cart-icon"
             ><img src="./images/icon-cart.svg" alt="cart icon" srcset=""
           /></a>
+          <p class="cart--strip">3</p>
         </li>
         <li>
           <a href="#">
@@ -65,7 +66,7 @@
     <main>
       <div class="container grid grid--2-cols u-pb-2">
         <div class="product-photos">
-          <div class="pdt-img-box">
+          <div class="pdt-img-box" id="productImage">
             <img
               class="pdt-img"
               src="./images/image-product-1.jpg"
@@ -131,11 +132,125 @@
           </div>
         </div>
       </div>
+
+      <!-- <div id="overlay"></div> -->
+      <div id="cart-popup">
+        <div id="popup">
+          <div class="popupcontrols">
+            <span id="popupclose">X</span>
+          </div>
+          <div class="popupcontent">
+            <h1 class="heading">Cart</h1>
+            <p class="hr-line"></p>
+            <p class="empty_msg" style="display: none">Your cart is empty</p>
+            <ul class="cart--list">
+              <li class="cart--list_item">
+                <img
+                  class="product-thumbnail"
+                  src="./images/image-product-1-thumbnail.jpg"
+                  alt="product-1-image"
+                />
+                <div class="cart--list_item_details">
+                  <p class="cart--list_item_name">
+                    Fall Limited Edition Sneakers
+                  </p>
+                  <p>
+                    <span class="produt--price">$125</span>
+                    <span>x</span>
+                    <span class="product--quantity">3</span>
+                    <strong class="product--price_total">$375.00</strong>
+                  </p>
+                </div>
+                <img
+                  class="delete-icon"
+                  src="./images/icon-delete.svg"
+                  alt="icon-delete"
+                />
+              </li>
+            </ul>
+            <button class="btn-checkout">Checkout</button>
+          </div>
+        </div>
+      </div>
+      <div class="light-box">
+        <div id="lboverlay"></div>
+        <div id="lbpopup">
+          <div class="lbcontrols">
+            <!-- <span id="lbclose">X</span> -->
+            <img
+              id="lbclose"
+              src="./images/icon-close.svg"
+              alt="close icon"
+              srcset=""
+            />
+          </div>
+          <div class="lbcontent">
+            <img
+              src="./images/image-product-1.jpg"
+              alt="product1 light-box image"
+            />
+            <div class="product-thumbnail-box">
+              <img
+                class="product-thumbnail product-thumbnail-active"
+                src="./images/image-product-1-thumbnail.jpg"
+                alt="product-1-image"
+              />
+              <img
+                class="product-thumbnail"
+                src="./images/image-product-2-thumbnail.jpg"
+                alt="product-2-image"
+              />
+              <img
+                class="product-thumbnail product-thumbnail-active"
+                src="./images/image-product-3-thumbnail.jpg"
+                alt="product-3-image"
+              />
+              <img
+                class="product-thumbnail"
+                src="./images/image-product-4-thumbnail.jpg"
+                alt="product-4-image"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
     </main>
+    <script>
+      const closePopup = document.getElementById("popupclose");
+
+      const popup = document.getElementById("popup");
+      const cartBtn = document.getElementById("cartBtn");
+      // Close Popup Event
+      closePopup.onclick = function () {
+        // overlay.style.display = "none";
+        popup.style.display = "none";
+      };
+      // Show Overlay and Popup
+      cartBtn.onclick = function () {
+        // overlay.style.display = "block";
+        popup.style.display = "block";
+      };
+    </script>
+    <script>
+      const productImage = document.getElementById("productImage");
+      const lboverlay = document.getElementById("lboverlay");
+      const lbpopup = document.getElementById("lbpopup");
+      const lbclose = document.getElementById("lbclose");
+      lbclose.addEventListener("click", () => {
+        lboverlay.style.display = "none";
+        lbpopup.style.display = "none";
+      });
+
+      productImage.addEventListener("click", () => {
+        lboverlay.style.display = "block";
+        lbpopup.style.display = "block";
+      });
+    </script>
 
     <!-- <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.
+    
   </div> -->
   </body>
 </html>

@@ -1,0 +1,91 @@
+#overlay {
+  display: none;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  background: #999;
+  width: 100%;
+  height: 100%;
+  opacity: 0.8;
+  z-index: 100;
+}
+
+#popup {
+  display: none;
+  position: absolute;
+  top: -18%;
+  right: 5%;
+  background: #fff;
+  width: 23%;
+  height: 45%;
+  // margin-left: -250px; /*Half the value of width to center div*/
+  // margin-top: -250px; /*Half the value of height to center div*/
+  z-index: 200;
+  box-shadow: -5px 16px 48px rgba(0, 0, 0, 0.2);
+}
+
+#popupclose {
+  float: right;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.popupcontent {
+  .heading {
+    margin: 32px 0 24px 24px;
+    color: $Very-dark-blue;
+  }
+  .empty_msg {
+    font-size: 1.6rem;
+    font-weight: 700;
+    text-align: center;
+    color: $Dark-grayish-blue;
+    margin-top: 2.4rem;
+  }
+  .hr-line {
+    border-top: 0.1px solid lighten($Grayish-blue, 15%);
+  }
+  .btn-checkout {
+    background-color: $Orange;
+    border: none;
+    border-radius: 0.8rem;
+    font-weight: 700;
+    color: $Light-grayish-blue;
+    width: 85%;
+    padding: 2rem 0;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+  }
+  .cart--list {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    margin: 2rem;
+    &_item {
+      display: flex;
+      align-items: flex-start;
+      gap: 1.6rem;
+      .product-thumbnail {
+        width: 15%;
+        border-radius: 0.3rem;
+      }
+      &_details {
+        color: $Grayish-blue;
+        font-size: 16px;
+        .product--price_total {
+          font-weight: 700;
+          color: $black;
+        }
+      }
+      .delete-icon {
+        align-self: center;
+        height: 2rem;
+      }
+    }
+  }
+}
+
+#button {
+  cursor: pointer;
+}
